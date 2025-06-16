@@ -1,72 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SRT Subtitle Viewer - Xem, tìm kiếm & học phụ đề SRT miễn phí</title>
-    <meta name="description" content="Trình xem phụ đề SRT siêu tốc, dễ dùng, hỗ trợ ngữ pháp AI, bộ lọc tìm kiếm, giao diện đẹp, tối ưu trên mọi thiết bị. Tăng hiệu quả học ngoại ngữ với Google Gemini AI." />
-    <meta name="keywords" content="SRT, Subtitle, Xem SRT, học tiếng Anh, AI, ngữ pháp, Google Gemini, phụ đề" />
-    <meta name="author" content="Lovable" />
+    <title>SRT Subtitle Viewer by Sach Song Ngu - Xem, tìm kiếm & học phụ đề SRT miễn phí</title>
+    <meta name="description" content="Trình xem phụ đề SRT siêu tốc của Sach Song Ngu, dễ dùng, hỗ trợ ngữ pháp AI, bộ lọc tìm kiếm, giao diện đẹp, tối ưu trên mọi thiết bị. Tăng hiệu quả học ngoại ngữ với Google Gemini AI." />
+    <meta name="keywords" content="SRT, Subtitle, Xem SRT, học tiếng Anh, AI, ngữ pháp, Google Gemini, phụ đề, Sach Song Ngu" />
+    <meta name="author" content="Sach Song Ngu" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="vi-VN" />
+    <meta name="theme-color" content="#3b82f6" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sachsongngu.github.io/srt-subtitle-viewer/" />
 
     <!-- Open Graph for social -->
-    <meta property="og:title" content="SRT Subtitle Viewer" />
-    <meta property="og:description" content="Xem file phụ đề SRT miễn phí, kèm ngữ pháp AI, lọc & học hiệu quả." />
+    <meta property="og:title" content="SRT Subtitle Viewer by Sach Song Ngu" />
+    <meta property="og:description" content="Xem file phụ đề SRT miễn phí, kèm ngữ pháp AI, lọc & học hiệu quả từ Sach Song Ngu." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lovable.app/" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:url" content="https://sachsongngu.github.io/srt-subtitle-viewer/" />
+    <meta property="og:image" content="https://sachsongngu.github.io/srt-subtitle-viewer/og-image.png" />
+    <meta property="og:site_name" content="Sach Song Ngu" />
+    <meta property="og:locale" content="vi_VN" />
+    
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:title" content="SRT Subtitle Viewer" />
-    <meta name="twitter:description" content="Phần mềm xem phụ đề SRT đẹp, tìm kiếm mạnh, dịch AI, học dễ dàng." />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:site" content="@sachsongngu" />
+    <meta name="twitter:title" content="SRT Subtitle Viewer by Sach Song Ngu" />
+    <meta name="twitter:description" content="Phần mềm xem phụ đề SRT đẹp, tìm kiếm mạnh, dịch AI, học dễ dàng từ Sach Song Ngu." />
+    <meta name="twitter:image" content="https://sachsongngu.github.io/srt-subtitle-viewer/og-image.png" />
 
-    <!-- Favicon chuẩn -->
+    <!-- Favicon và icons -->
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
 
-    <!-- Preload & Optimize Google Fonts for SEO & speed -->
+    <!-- Preload & Optimize cho tốc độ -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" media="all">
+    <link rel="dns-prefetch" href="https://generativelanguage.googleapis.com">
+    
+    <!-- Critical CSS inline để tránh FOUC -->
+    <style>
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2') format('woff2');
+      }
+      body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .loading { opacity: 0; }
+      .loaded { opacity: 1; transition: opacity 0.3s ease; }
+    </style>
+    
+    <!-- Load fonts với display=swap -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap"></noscript>
 
-    <!-- SEO: Structured data (JSON-LD schema.org) -->
+    <!-- Structured data (JSON-LD schema.org) -->
     <script type="application/ld+json">
       {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "SRT Subtitle Viewer",
-        "url": "https://lovable.app/",
-        "description": "Trình xem phụ đề SRT miễn phí, AI, lọc và phân tích, học ngôn ngữ.",
+        "name": "SRT Subtitle Viewer by Sach Song Ngu",
+        "url": "https://sachsongngu.github.io/srt-subtitle-viewer/",
+        "description": "Trình xem phụ đề SRT miễn phí, AI, lọc và phân tích, học ngôn ngữ từ Sach Song Ngu.",
         "applicationCategory": "UtilitiesApplication",
-        "inLanguage": "en",
-        "operatingSystem": "All"
+        "inLanguage": ["vi-VN", "en-US"],
+        "operatingSystem": "All",
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
+        "author": {
+          "@type": "Organization",
+          "name": "Sach Song Ngu",
+          "url": "https://sachsongngu.github.io"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "Upload SRT files",
+          "Search and filter subtitles", 
+          "AI grammar analysis",
+          "Mobile responsive design",
+          "Free to use"
+        ]
       }
     </script>
 
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script takes the current url and converts the path and query
-      // string into just a query string, and then redirects the browser
-      // to the new url with only a query string and hash fragment,
-      // e.g., https://www.foo.tld/one/two?a=b&c=d#qwe, becomes
-      // https://www.foo.tld/?/one/two&a=b~and~c=d#qwe
-      // Note: this 404.html file must be at least 512 bytes for it to work
-      // with Internet Explorer (it is currently > 512 bytes)
-
-      // If you're creating a Project Pages site and NOT using a custom domain,
-      // then set pathSegmentsToKeep to 1 (enterprise users may need to set it to > 1).
-      // This way the code will only replace the route part of the path, and not
-      // the real directory in which the app resides, for example:
-      // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
-      // https://username.github.io/repo-name/?/one/two&a=b~and~c=d#qwe
-      // Otherwise, leave pathSegmentsToKeep as 0.
       var pathSegmentsToKeep = 1;
-
       var l = window.location;
       if (l.hostname === 'localhost' || l.hostname === '127.0.0.1') {
         pathSegmentsToKeep = 0;
@@ -83,12 +111,24 @@
     <!-- End Single Page Apps for GitHub Pages -->
   </head>
 
-  <body class="font-sans">
-    <header>
-      <nav aria-label="Breadcrumb" style="display:none"></nav>
+  <body class="font-sans loading">
+    <header style="display:none">
+      <nav aria-label="Breadcrumb"></nav>
+      <h1 style="position:absolute;left:-9999px;">SRT Subtitle Viewer by Sach Song Ngu</h1>
     </header>
     <main id="root"></main>
     <footer style="display:none"></footer>
+    
+    <!-- Preload module để tăng tốc -->
+    <link rel="modulepreload" href="/src/main.tsx" />
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Mark page as loaded -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.body.classList.remove('loading');
+        document.body.classList.add('loaded');
+      });
+    </script>
   </body>
 </html>

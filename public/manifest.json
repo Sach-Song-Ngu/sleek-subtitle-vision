@@ -1,18 +1,37 @@
 
 {
   "manifest_version": 3,
-  "name": "SRT Subtitle Viewer",
-  "description": "Xem, lọc và phân tích phụ đề SRT trực tiếp từ popup extension trên Firefox.",
-  "version": "1.0.0",
+  "name": "SRT Subtitle Viewer by Sach Song Ngu",
+  "short_name": "SRT Viewer",
+  "description": "Xem, lọc và phân tích phụ đề SRT trực tiếp từ Sach Song Ngu với AI hỗ trợ ngữ pháp.",
+  "version": "2.0.0",
+  "start_url": "/srt-subtitle-viewer/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
   "action": {
     "default_popup": "index.html",
-    "default_title": "SRT Subtitle Viewer"
+    "default_title": "SRT Subtitle Viewer by Sach Song Ngu"
   },
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
-  },
+  "icons": [
+    {
+      "src": "icons/icon16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon48.png", 
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon128.png",
+      "sizes": "128x128", 
+      "type": "image/png"
+    }
+  ],
   "permissions": [],
-  "host_permissions": []
+  "host_permissions": [],
+  "categories": ["education", "utilities", "productivity"]
 }
