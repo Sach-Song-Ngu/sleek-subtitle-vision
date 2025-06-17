@@ -6,35 +6,35 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   
   <url>
-    <loc>https://sachsongngu.github.io/srt-subtitle-viewer/</loc>
+    <loc>https://sach-song-ngu.github.io/sleek-subtitle-vision/</loc>
     <lastmod>2024-12-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>https://sachsongngu.github.io/srt-subtitle-viewer/about</loc>
+    <loc>https://sach-song-ngu.github.io/sleek-subtitle-vision/about</loc>
     <lastmod>2024-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://sachsongngu.github.io/srt-subtitle-viewer/contact</loc>
+    <loc>https://sach-song-ngu.github.io/sleek-subtitle-vision/contact</loc>
     <lastmod>2024-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://sachsongngu.github.io/srt-subtitle-viewer/terms</loc>
+    <loc>https://sach-song-ngu.github.io/sleek-subtitle-vision/terms</loc>
     <lastmod>2024-12-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   
   <url>
-    <loc>https://sachsongngu.github.io/srt-subtitle-viewer/privacy</loc>
+    <loc>https://sach-song-ngu.github.io/sleek-subtitle-vision/privacy</loc>
     <lastmod>2024-12-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>

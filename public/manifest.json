@@ -5,7 +5,7 @@
   "short_name": "SRT Viewer",
   "description": "Xem, lọc và phân tích phụ đề SRT trực tiếp từ Sach Song Ngu với AI hỗ trợ ngữ pháp.",
   "version": "2.0.0",
-  "start_url": "/srt-subtitle-viewer/",
+  "start_url": "/sleek-subtitle-vision/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#3b82f6",

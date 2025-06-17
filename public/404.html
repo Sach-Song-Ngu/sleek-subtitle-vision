@@ -3,24 +3,26 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>SRT Subtitle Viewer</title>
+    <title>SRT Subtitle Viewer by Sach Song Ngu</title>
     <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script checks to see if a redirect is present in the query string,
-      // converts it back into the correct url and adds it to the
-      // browser's history using window.history.replaceState(...)
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
+      // GitHub Pages SPA redirect
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      var pathname = l.pathname;
+      
+      // Only redirect if not already on the main page
+      if (pathname !== '/sleek-subtitle-vision/' && pathname !== '/sleek-subtitle-vision/index.html') {
+        var redirect = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          '/sleek-subtitle-vision/' + '?/' + 
+          pathname.split('/').slice(2).join('/').replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash;
+        
+        sessionStorage.redirect = redirect;
+      }
+      
+      // Redirect to main page
+      window.location.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/sleek-subtitle-vision/');
     </script>
   </head>
   <body>

@@ -20,5 +20,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: process.env.NODE_ENV === 'production' ? '/srt-subtitle-viewer/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/sleek-subtitle-vision/' : '/',
 }));

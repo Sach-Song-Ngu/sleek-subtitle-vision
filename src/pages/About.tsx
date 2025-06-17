@@ -8,7 +8,7 @@ const About = () => (
     <Helmet>
       <title>Về chúng tôi - SRT Subtitle Viewer by Sach Song Ngu</title>
       <meta name="description" content="Tìm hiểu về Sach Song Ngu và công cụ SRT Subtitle Viewer. Đội ngũ yêu công nghệ và ngôn ngữ, mang lại trải nghiệm học tập hiệu quả." />
-      <link rel="canonical" href="https://sachsongngu.github.io/srt-subtitle-viewer/about" />
+      <link rel="canonical" href="https://sach-song-ngu.github.io/sleek-subtitle-vision/about" />
     </Helmet>
     <main className="bg-gradient-to-tr from-blue-50 to-indigo-100 min-h-screen flex flex-col items-center justify-center px-4 py-12">
       <article className="max-w-2xl w-full bg-white/90 rounded-xl shadow-2xl px-6 py-8 animate-scale-in">

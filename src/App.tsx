@@ -38,7 +38,7 @@ const queryClient = new QueryClient({
 });
 
 // Get base path for GitHub Pages
-const basename = process.env.NODE_ENV === 'production' ? '/srt-subtitle-viewer' : '';
+const basename = process.env.NODE_ENV === 'production' ? '/sleek-subtitle-vision' : '';
 
 const App = () => (
   <HelmetProvider>

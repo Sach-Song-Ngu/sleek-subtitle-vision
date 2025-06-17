@@ -18,7 +18,7 @@ Allow: /
 Crawl-delay: 2
 
 # Sitemap
-Sitemap: https://sachsongngu.github.io/srt-subtitle-viewer/sitemap.xml
+Sitemap: https://sach-song-ngu.github.io/sleek-subtitle-vision/sitemap.xml
 
 # Specific pages
 Allow: /about

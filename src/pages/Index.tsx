@@ -44,6 +44,7 @@ const Index = () => {
         <Helmet>
           <title>Đang xem phụ đề SRT - SRT Subtitle Viewer by Sach Song Ngu</title>
           <meta name="description" content="Đang xem và phân tích file phụ đề SRT với công cụ của Sach Song Ngu. Tìm kiếm, lọc và học ngữ pháp dễ dàng." />
+          <link rel="canonical" href="https://sach-song-ngu.github.io/sleek-subtitle-vision/" />
         </Helmet>
         <main className="h-screen min-h-0 bg-gradient-to-tr from-blue-50 to-indigo-100 flex flex-col items-center justify-center py-0 px-0">
           <section className="flex flex-col w-full h-full max-w-[750px] mx-auto flex-1 min-h-0 px-1 sm:px-0" aria-label="Danh sách phụ đề">
@@ -62,7 +63,7 @@ const Index = () => {
       <Helmet>
         <title>SRT Subtitle Viewer by Sach Song Ngu - Xem phụ đề SRT miễn phí</title>
         <meta name="description" content="Công cụ xem phụ đề SRT miễn phí từ Sach Song Ngu. Upload file .srt, tìm kiếm, lọc và phân tích ngữ pháp với AI. Hỗ trợ học ngoại ngữ hiệu quả." />
-        <link rel="canonical" href="https://sachsongngu.github.io/srt-subtitle-viewer/" />
+        <link rel="canonical" href="https://sach-song-ngu.github.io/sleek-subtitle-vision/" />
       </Helmet>
       <main className="h-screen min-h-0 bg-gradient-to-tr from-blue-50 to-indigo-100 flex flex-col items-center justify-center py-0 px-0">
         <section className="flex flex-col w-full h-full max-w-[750px] mx-auto flex-1 min-h-0 justify-center px-1 sm:px-0" aria-label="Trang tải lên phụ đề">
